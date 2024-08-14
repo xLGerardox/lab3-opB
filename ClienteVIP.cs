@@ -8,9 +8,9 @@
         Descuento = descuento;
     }
 
-    public void AplicarDescuento(ref float total)
+    public float AplicarDescuento(float total)
     {
-        total -= total * Descuento;
+        return total - (total * Descuento);
     }
 
     public override void MostrarDetalles()
